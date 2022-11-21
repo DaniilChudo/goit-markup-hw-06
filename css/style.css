@@ -627,6 +627,7 @@ fill: var(--main-background-color);
 }
 
 .footer-text {
+font-weight: 700;
 margin-bottom: 20px;
 color: var(--hero-title-color);
 text-transform: uppercase;
@@ -658,9 +659,6 @@ transition: border-color var(--animation-function);
     border-color: var(--accent-text-color);
 }
 
-/*.footer-fill-color {
--webkit-text-fill-color: rgba(255, 255, 255, 0.6);
-}*/
 
 .f-form-btn {
 position: relative;
@@ -677,12 +675,11 @@ right: 28px;
 fill: var(--button-text-color)
 }
 
-.
  /*-----PORTFOLI----*/
 
- .portfolio-s {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.portfolio-s {
+padding-top: 94px;
+padding-bottom: 94px;
  }
 
 .radio-btn {
@@ -935,18 +932,30 @@ border-color: var(--accent-text-color);
 .modal-form-checkbox {
     appearance: none;
     outline: unset;
-    outline-offset: -2px;
+    /*outline-offset: -2px;*/
     width: 16px;
     height: 15px;
-    border-radius: 2px;
+   /* border-radius: 2px;
     border: 2px solid rgba(33, 33, 33, 1);
     background-position: center;
     background-repeat: no-repeat;
-    box-sizing: 0;
-    transition: background-size var(--animation-function), background-color var(--animation-function), outline-color var(--animation-function);
+    background-size: 0;
+    transition: background-size var(--animation-function), background-color var(--animation-function), outline-color var(--animation-function);*/
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  border: 2px solid #9da4bd;
+  border-radius: 2px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E%0A");
+
+  transition: border var(--animation-function), background-color var(--animation-function), background-image var(--animation-function)
 }
 
 .modal-form-checkbox:checked {
  border-color: var(--accent-text-color);   
  background-color: var(--accent-text-color);
+ background-size: 11px 8px;
 }
